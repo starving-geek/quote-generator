@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    // displays a quote generated randomly
-});
-
 $(".quoteBtn").click(function() {
     var quoteString = randomQuote();
     $(".quote").text(quoteString);
