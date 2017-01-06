@@ -25,15 +25,11 @@ var quotes = [
 $(".quoteBtn").click(function() {
     var quoteString = randomQuote();
     $(".quote").text(quoteString);
+    $("#tweetq").attr("href", "https://twitter.com/intent/tweet?text=" + quoteString);
 });
 
-$(".tweetBtn").click(function() {
-
-});
 
 function randomQuote() {
-
-
     // numbers from 0 to the length of the quote array non-inclusive
     var randIndex = getRandomInt(0, quotes.length);
     return quotes[randIndex];
