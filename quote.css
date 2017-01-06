@@ -1,0 +1,30 @@
+* {
+  margin,
+  padding: 0;
+}
+
+.header {
+  color: #C56BF5;
+  background-color: #000000;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+body {
+  background-color: #F56BC7;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.buttons {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #F56BC7;
+}
+
+.quote {
+  color: #fff;
+  padding: 15px;
+}
