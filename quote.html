@@ -2,64 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <link rel="stylesheet" type="text/css" href="quote.css">
         <title>Random Quote Machine</title>
-
-        <style>
-            * {
-                margin, padding: 0;
-            }
-            .header {
-                color: #C56BF5;
-                background-color: #000000;
-                padding-bottom: 30px;
-                margin-top: 10px;
-                padding-top: 5px;
-                text-align: center;
-            }
-            body {
-                background-color: #F56BC7;
-                font-family: 'Nunito Sans', sans-serif;
-            }
-            .buttons {
-                margin:0;
-                text-align: center;
-                color: #fff;
-                background-color: #F56BC7;
-            }
-            .quote {
-                color: #fff;
-                padding: 15px;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-
                 <h1>Mean Girls Random Quote Machine</h1>
-
                 <p>This produces quotes randomly from the 2004 classic Mean Girls.</p>
-
                 <div>
-                    <h4 class="quote">I gave him everything! I was half a virgin when I met him!</h4>
+                    <h4 class="quote"></h4>
                 </div>
-
                 <button class="btn buttons quoteBtn">Get Quote</button>
-                <a class="twitter-share-button" id="tweetq"
-                    href=""><button class="btn btn-primary">Tweet</button></a>
 
+                <a class="twitter-share-button" id="tweetq" href="#" data-size="large" target="_blank">
+                    <button class="btn btn-primary" alt="Tweet quote">
+                    Tweet
+                    </button>
+                </a>
             </div>
-
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous">
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
         </script>
-
         <script src="rand-quote.js"></script>
     </body>
 </html>

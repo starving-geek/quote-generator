@@ -21,13 +21,22 @@ var quotes = [
     "So you agree? You think you're really pretty?"
 
 ];
+var quoteString = randomQuote();
 
-$(".quoteBtn").click(function() {
-    var quoteString = randomQuote();
+$(document).ready(function() {
     $(".quote").text(quoteString);
     $("#tweetq").attr("href", "https://twitter.com/intent/tweet?text=" + quoteString);
 });
+$(".quoteBtn").click(function() {
+    quoteString = randomQuote();
+    $(".quote").text(quoteString);
+});
 
+$("#tweetq").click(function() {
+    var tweetLink = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteString);
+    $("#tweetq").attr("href", tweetLink);
+    location.reload(true);
+});
 
 function randomQuote() {
     // numbers from 0 to the length of the quote array non-inclusive
